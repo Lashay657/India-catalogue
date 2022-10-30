@@ -10,6 +10,19 @@ let count = 0;
   console.log(count);
 }
 
+function showNextItem() {
+  items[count].classList.remove('active');
+
+  if(count < itemCount - 1) {
+    count++;
+  } else {
+    count = 0;
+  }
+
+  items[count].classList.add('active');
+  console.log(count);
+}
+
 function toggleNavigation(){
   this.nextElementSibling.classList.toggle('active');
 }
