@@ -23,6 +23,20 @@ function showNextItem() {
   console.log(count);
 }
 
+function showPreviousItem() {
+  items[count].classList.remove('active');
+
+  if(count > 0) {
+    count--;
+  } else {
+    count = itemCount - 1;
+  }
+
+  items[count].classList.add('active');
+  // Check if working...
+  console.log(count);
+}
+
 function toggleNavigation(){
   this.nextElementSibling.classList.toggle('active');
 }
