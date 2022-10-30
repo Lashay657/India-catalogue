@@ -44,12 +44,6 @@ nav {
   color: $red;
 }
 
-img {
-	width: 100%;
-  height: 43vh;
-	object-fit: cover;
-}
-
 .vertical {
   flex-direction: column;
   justify-content: center;
